@@ -80,7 +80,7 @@
   overflow: hidden;
 }
 .checkout ul li.subtotal {
-  font-weight: lighter;
+  font-weight: bold;
   text-transform: capitalize;
   border-bottom: 1px solid #fff;
   padding-bottom: 14px;

@@ -96,7 +96,7 @@
     <!-- heading ends here -->
 
     <!--Listing start here-->
-    <section class="container container-listing visually-hidden">
+    <section class="container container-listing">
       <h2 class="font-cursive" id="car-listing">Listing</h2>
       <div class="row">
         <!--start dress 1-->
@@ -175,7 +175,7 @@
               alt="dress"
             />
             <div class="card-body">
-              <h5 class="card-title">beautifull net dress</h5>
+              <h5 class="card-title">Beautifu net dress</h5>
               <div class="shop-item-details">
                 <span class="shop-item-price">$160</span>
                 <button
@@ -213,7 +213,6 @@
           </div>
         </div>
         <!--end dress 5-->
-
         <!--start bottom 6-->
         <div class="col mb-3">
           <div class="card" style="width: 15rem">
@@ -237,7 +236,6 @@
           </div>
         </div>
         <!--end bottom 6-->
-
         <!--start bottom 7-->
         <div class="col mb-3">
           <div class="card" style="width: 15rem">
@@ -261,7 +259,6 @@
           </div>
         </div>
         <!--end bottom 7-->
-
         <!--start bottom 8-->
         <div class="col mb-3">
           <div class="card" style="width: 15rem">
@@ -272,7 +269,7 @@
             />
             <div class="card-body">
               <h5 class="card-title">
-                Casual low-fli<br />
+                Casual low=fli<br />
                 denim
               </h5>
               <div class="shop-item-details">
@@ -294,64 +291,152 @@
 
     <!-- Order details start here -->
 
-    <section class="container">
-      <!-- First item starts here -->
-      <div class="row cart-row mb-3">
-        <div class="col-3">
-          <img
-            class="cart-item-image"
-            src="./image/bridal dress.jpg"
-            width="100"
-            height="100"
-          />
-        </div>
+    <div>
+      <h2 class="bg-success text-center font-cursive mt-3">Order Details:</h2>
+    </div>
 
-        <div class="col-4">Floral dress</div>
+    <section class="mt-5">
+      <div class="container">
+        <div class="cart">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-dark bg-secondary">
+                <tr>
+                  <th scope="col">Item name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- First item start -->
+                <tr>
+                  <td>
+                    <div class="main">
+                      <div class="d-flex">
+                        <img
+                          src="./image/bridal dress.jpg"
+                          width="140"
+                          height="100"
+                          alt="bridal-dress"
+                        />
+                      </div>
+                      <div class="des">
+                        <p>A very beautifull bridal dress.</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <h6>$160</h6>
+                  </td>
+                  <td>
+                    <div class="counter">
+                      <i class="bi bi-chevron-down"></i>
+                      <input
+                        class="input-number"
+                        type="text"
+                        value="1"
+                        min="0"
+                        max="10"
+                      />
+                      <i class="bi bi-chevron-up"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <h6>$160</h6>
+                  </td>
+                  <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+                <!-- Firstitem ends here -->
 
-        <div class="cart-price col-1">$160</div>
-        <div class="cart-quantity col-4">
-          <input class="cart-quantity-input" type="number" value="1" />
-          <button class="btn btn-danger" type="button">Remove</button>
-        </div>
-      </div>
+                <!-- second item starts here -->
+                <tr>
+                  <td>
+                    <div class="main">
+                      <div class="d-flex">
+                        <img
+                          src="./image/denim.jpg"
+                          width="140"
+                          height="100"
+                          alt="denim-dress"
+                        />
+                      </div>
+                      <div class="des">
+                        <p>Very comfortable and stylish denim shirt dress.</p>
+                      </div>
+                    </div>
+                  </td>
 
-      <!-- Second item starts here -->
-      <div class="row cart-row mb-3">
-        <div class="col-3">
-          <img
-            class="cart-item-image"
-            src="./image/emberioed jeans.jpg"
-            width="100"
-            height="100"
-          />
-        </div>
+                  <td>
+                    <h6>$120</h6>
+                  </td>
+                  <td>
+                    <div class="counter">
+                      <i class="bi bi-chevron-down"></i>
+                      <input
+                        class="input-number"
+                        type="text"
+                        value="1"
+                        min="0"
+                        max="10"
+                      />
+                      <i class="bi bi-chevron-up"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <h6>$120</h6>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Remove</button>
+                  </td>
+                </tr>
+                <!-- Second item end here -->
 
-        <div class="col-4">Embroided jeans</div>
-
-        <div class="cart-price col-1">$140</div>
-        <div class="cart-quantity col-4">
-          <input class="cart-quantity-input" type="number" value="1" />
-          <button class="btn btn-danger" type="button">Remove</button>
-        </div>
-      </div>
-
-      <!-- Third item starts here -->
-      <div class="row cart-row">
-        <div class="col-3">
-          <img
-            class="cart-item-image"
-            src="./image/denim.jpg"
-            width="100"
-            height="100"
-          />
-        </div>
-
-        <div class="col-4">denim shirt dress</div>
-
-        <div class="cart-price col-1">$120</div>
-        <div class="cart-quantity col-4">
-          <input class="cart-quantity-input" type="number" value="1" />
-          <button class="btn btn-danger" type="button">Remove</button>
+                <!-- Third item start here -->
+                <tr>
+                  <td>
+                    <div class="main">
+                      <div class="d-flex">
+                        <img
+                          src="./image/emberioed jeans.jpg"
+                          width="140"
+                          height="100"
+                          alt="jeans"
+                        />
+                      </div>
+                      <div class="des">
+                        <p>A high quality streatchable jeans.</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <h6>$140</h6>
+                  </td>
+                  <td>
+                    <div class="counter">
+                      <i class="bi bi-chevron-down"></i>
+                      <input
+                        class="input-number"
+                        type="text"
+                        value="1"
+                        min="0"
+                        max="10"
+                      />
+                      <i class="bi bi-chevron-up"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <h6>$140</h6>
+                  </td>
+                  <td>
+                    <button class="btn btn-danger">Remove</button>
+                  </td>
+                </tr>
+                <!-- Third item ends here -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
