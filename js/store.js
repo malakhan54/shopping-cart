@@ -1,19 +1,18 @@
 // console.log("hello world");
 // Remove button
-const removeCartItemBurttons = document.querySelector(".btn-secondary");
-console.log("removeCartItemBurttons");
-for (let i = 0; < removeCartItemBurttons.length; i++) {
-    let button = removeCartItemBurttons[1]
-    button.addEventListener("click" function(event) {
-        let buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCartTotal()
-    })
+const removeCartItemButtons = document.querySelectorAll(".btn-remove");
+console.log(removeCartItemButtons);
+for (let i = 0; i < removeCartItemButtons.length; i++) {
+  let button = removeCartItemButtons[i];
+  button.addEventListener("click", function (event) {
+    console.log("click", event);
+    let buttonClicked = event.target;
+    buttonClicked.closest(".cart-row").remove();
+    updateCartTotal();
+  });
 }
-functionupdateCartTotal(){
-    const cartItemsContainer = document.querySelector("cartItems")[0]
-    const cartRows = cartItemsContainer.querySelector("cart-row")
-    for (let i = o; < cartItemsContainer.length; i++){
-        
-    }
+function updateCartTotal() {
+  const cartItemsContainer = document.querySelectorAll("cartItems")[0];
+  const cartRows = cartItemsContainer.querySelector("cart-row");
+  for (let i = o; i < cartItemsContainer.length; i++) {}
 }
