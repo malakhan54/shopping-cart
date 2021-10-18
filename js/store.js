@@ -1,4 +1,21 @@
 // console.log("hello world");
+// initilising taskManager
+// const cartManager = new cartManager();
+
+// Add to Cart button
+
+const addToCartButtons = document.querySelectorAll(".shop-item-button");
+for (let i = 0; i < addToCartButtons.length; i++) {
+  let button = addToCartButtons[i];
+  button.addEventListener("click", addToCartClicked);
+}
+function addToCartClicked(event) {
+  let button = event.target;
+  let shopItem = button.closest(".col");
+  console.log(shopItem);
+  let title = shopItem.querySelector(".card-title").innerText;
+}
+
 // Remove button
 const cartElement = document.querySelector(".cart-items");
 console.log(cartElement);
@@ -10,6 +27,9 @@ cartElement.addEventListener("click", function (event) {
     updateCartTotal();
   }
 });
+
+// Update Cart Total
+
 cartElement.addEventListener("change", function (event) {
   console.log("change", event.target);
   let target = event.target;
