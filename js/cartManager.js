@@ -3,7 +3,7 @@ function createCartHtml(title, price, quantity) {
         <div class="cart-item col-3">
           <img
             class="cart-item-image"
-            src="./image/bridal dress.jpg"
+            src="${imgsrc}"
             width="100"
             height="100"
           />
